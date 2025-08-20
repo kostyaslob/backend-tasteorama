@@ -14,7 +14,10 @@ const usersSchema = new Schema(
         password: {
             type: String,
             required: true,
-        }
+        },
+        savedRecipes: [{
+            type: Schema.Types.ObjectId, ref: "recipes"
+        }],
     },
     {
         timestamps: true,

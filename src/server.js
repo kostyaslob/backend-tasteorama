@@ -10,7 +10,7 @@ import { notFoundHandler } from "./middlewares/notFoundHandler.js";
 import { UPLOAD_DIR } from "./constants/index.js";
 import { swaggerDocs } from "./middlewares/swaggerDocs.js";
 
-const PORT = Number(getEnvVar("PORT", "3000"));
+const PORT = Number(getEnvVar("PORT", "8080"));
 
 export const setupServer = () => {
   const app = express();
